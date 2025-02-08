@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operators Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        button { margin: 5px; padding: 10px; }
+        #output { margin-top: 20px; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Operators Demo</h1>
+    
+    <h3>Arithmetic Operators</h3>
+    <button onclick="showResult(5 + 3)">5 + 3</button>
+    <button onclick="showResult(10 - 4)">10 - 4</button>
+    <button onclick="showResult(6 * 7)">6 * 7</button>
+    <button onclick="showResult(20 / 5)">20 / 5</button>
+    
+    <h3>Comparison Operators</h3>
+    <button onclick="showResult(5 > 3)">5 > 3</button>
+    <button onclick="showResult(4 < 2)">4 < 2</button>
+    <button onclick="showResult(10 == '10')">10 == '10'</button>
+    <button onclick="showResult(10 === '10')">10 === '10'</button>
+    
+    <h3>Logical Operators</h3>
+    <button onclick="showResult(true && false)">true && false</button>
+    <button onclick="showResult(true || false)">true || false</button>
+    <button onclick="showResult(!true)">!true</button>
+    
+    <div id="output">Result: </div>
+    
+    <script>
+        function showResult(result) {
+            document.getElementById('output').innerText = "Result: " + result;
+        }
+    </script>
+</body>
+</html>
